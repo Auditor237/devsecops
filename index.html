@@ -1,32 +1,20 @@
  Bonjour GEMA
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Test SQL Injection</title>
-    <script>
-        // Validation côté client pour empêcher l'envoi de caractères dangereux (non suffisant, mais utile)
-        function validateForm() {
-            const input = document.getElementById('search').value;
-            const unsafePattern = /['";--]/;
-            if (unsafePattern.test(input)) {
-                alert("Votre recherche contient des caractères non autorisés.");
-                return false;
-            }
-            return true;
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>OWASP Dependency-Check Demo</title>
+<!-- Inclusion d'une bibliothèque JavaScript vulnérable -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.
+js"></script>
 </head>
 <body>
-    <h1>Bienvenue sur test-gema.local</h1>
-    <form method="post" action="/search" onsubmit="return validateForm()">
-        <label for="search">Rechercher :</label>
-        <input type="text" id="search" name="search" required>
-        <button type="submit">Envoyer</button>
-    </form>
-    <!-- Ce formulaire est sécurisé côté client, mais nécessite une logique sécurisée côté serveur :
-         1. Utilisez des requêtes SQL avec des paramètres préparés.
-         2. Validez et nettoyez toutes les entrées utilisateur côté serveur.
-         3. Évitez d'insérer directement des données utilisateur dans les requêtes SQL. -->
+<h1>Test OWASP Dependency-Check</h1>
+<p>Ceci est une page de démonstration avec une bibliothèque
+vulnérable.</p>
 </body>
 </html>
