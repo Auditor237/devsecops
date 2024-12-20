@@ -1,0 +1,40 @@
+{
+  "dependencies": [
+    {
+      "group": "jquery",
+      "artifact": "jquery",
+      "version": "1.7.2",
+      "reference": "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js",
+      "vulnerabilities": [
+        {
+          "vulnerability": "CVE-2012-6708",
+          "description": "jQuery 1.7.2 allows XSS attacks due to an issue in the jQuery.parseJSON function.",
+          "cvssV2": {
+            "score": 4.3,
+            "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+          },
+          "cvssV3": {
+            "score": 6.1,
+            "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+          },
+          "publishedDate": "2012-10-24",
+          "lastModifiedDate": "2017-06-22"
+        },
+        {
+          "vulnerability": "CVE-2014-6071",
+          "description": "jQuery versions 1.x before 1.11.1 and 2.x before 2.1.1 allow remote attackers to execute arbitrary code via unspecified vectors.",
+          "cvssV2": {
+            "score": 7.5,
+            "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+          },
+          "cvssV3": {
+            "score": 7.5,
+            "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "publishedDate": "2014-08-08",
+          "lastModifiedDate": "2017-06-22"
+        }
+      ]
+    }
+  ]
+}
